@@ -16,7 +16,7 @@ public class PaymentDaoImpl implements PaymentDao {
     }
 
     @Override
-    public List<Payment> getAll(Integer projectId) {
+    public List<Payment> findByProjectId(Integer projectId) {
         List<Payment> paymentList = new ArrayList<>();
         Participant participant = new Participant();
         participant.setName("たら");

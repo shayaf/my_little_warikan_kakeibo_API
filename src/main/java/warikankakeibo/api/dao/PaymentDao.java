@@ -10,7 +10,7 @@ public interface PaymentDao {
 
     public void create(Payment payment);
 
-    public List<Payment> getAll(Integer projectId);
+    public List<Payment> findByProjectId(Integer projectId);
 
     public void delete(int paymentId);
 }

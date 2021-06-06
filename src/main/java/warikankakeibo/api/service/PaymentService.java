@@ -16,6 +16,6 @@ public class PaymentService {
     }
 
     public List<Payment> getAll(Integer projectId) {
-        return paymentDao.getAll(projectId);
+        return paymentDao.findByProjectId(projectId);
     }
 }
