@@ -11,7 +11,7 @@ import java.util.List;
 
 @RequiredArgsConstructor
 @RestController
-public class appController {
+public class AppController {
 
     private final PaymentService paymentService;
 
