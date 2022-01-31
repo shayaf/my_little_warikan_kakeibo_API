@@ -4,9 +4,6 @@ RUN yum install -y tar gzip \
   && tar zxf dynamodb_local_latest.tar.gz -C /dynamodb \
   && mkdir /data
 
-# このスクリプトが DynamoDB Local を起動して import-data.jar を実行します
-RUN /dynamodb-local-init.sh
-
 # ここまでがビルド用のイメージ (builder) で、ここからが配布用のイメージです
 FROM amazon/dynamodb-local
 
